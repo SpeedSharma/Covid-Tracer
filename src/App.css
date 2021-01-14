@@ -1,0 +1,43 @@
+*{
+  margin: 0;padding: 0;box-sizing: border-box;
+}
+
+.app{
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  padding: 25px;
+  background: #cb2d3e;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #ef473a, #cb2d3e);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #ef473a, #cb2d3e); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  color: #fff;
+}
+
+.app-left{
+  flex: 0.5;
+}
+
+.app-right{
+ flex:0.4;
+}
+
+.app-header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;  
+}
+
+.app-stats{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 25px;
+}
+
+
+@media(max-width:768px){
+  .app{
+    flex-direction: column;
+  }
+}
